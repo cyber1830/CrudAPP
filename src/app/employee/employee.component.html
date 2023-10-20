@@ -1,0 +1,42 @@
+<div class="container-fluid g-0 p-2">
+
+    <div class="row g-0">
+
+        <div class="col ps-2">
+
+            <div class="row g-0">
+
+                <div class="col-md-10 text-center">
+                    <span class="name">{{employee.firstname | titlecase}} {{employee.lastname | titlecase}}</span>
+                </div>
+
+                <div class="col-md-2 d-flex justify-content-center align-items-center">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-outline-success"
+                            (click)="editEmployeeClicked()">Edit</button>
+                        <button type="button" class="btn btn-outline-danger"
+                            (click)="deleteEmployeeClicked()">Delete</button>
+                    </div>
+                </div>
+
+            </div>
+                <div class="col">
+
+                    <table class="table table-hover mx-auto">
+                        <tbody>
+                            <tr>
+                                <td>phoneNumber</td>
+                                <td>{{employee.phoneNumber}}</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>{{employee.email}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
